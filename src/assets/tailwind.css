@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html{
+    @apply bg-slate-500;
+  }
+  
+  :root {
+    --primary: 231 231 231;
+    --secondary: 37 36 31;
+    --error: 251 128 140;
+    --darkest_error: 132 32 41;
+    --info: 124 226 246;
+    --darkest_info: 6 81 97;
+    --warning: 248 217 126;
+    --darkest_warning: 102 77 3;
+    --success: 107 219 168;
+    --darkest_success: 15 81 50;
+  }
+  .dark {
+    --primary: 37 36 31;
+    --secondary: 231 231 231;
+  }
+}
